@@ -50,7 +50,7 @@ export default function HowItWorks() {
                     <h3 className="suggestion-title">Suggest a Feature</h3>
                     <p className="suggestion-desc">What feature would you like to see in the future?</p>
                     <a
-                        href="https://forms.gle/s5Tbf5hb28krCb6T6"
+                        href="https://forms.gle/y7kcPYRRyErcjR8h6"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="suggestion-btn"
