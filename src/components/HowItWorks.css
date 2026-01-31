@@ -1,0 +1,115 @@
+.how-it-works {
+    background-color: var(--surface);
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.step-item {
+    position: relative;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--border);
+    line-height: 1;
+}
+
+.step-connector {
+    font-size: 2rem;
+    color: var(--border);
+    font-weight: 300;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.step-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Suggestion Card */
+.suggestion-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 4rem auto 0;
+    text-align: left;
+    box-shadow: var(--shadow);
+}
+
+.suggestion-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--surface);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.suggestion-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.suggestion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.suggestion-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .step-connector {
+        display: none;
+        /* Hide connector arrow on mobile */
+    }
+}

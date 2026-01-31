@@ -1,0 +1,233 @@
+.footer-wrapper {
+    margin-top: 8rem;
+    background-color: var(--secondary);
+    color: white;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.cta-box {
+    background-color: var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 4rem;
+    text-align: center;
+    transform: translateY(-50%);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-waitlist-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.footer-waitlist-input {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    padding: 0.875rem 1.25rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.footer-waitlist-input:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.footer-waitlist-submit {
+    background-color: white;
+    color: var(--primary);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.footer-waitlist-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-waitlist-submit:not(:disabled):hover {
+    background-color: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .footer-waitlist-form {
+        flex-direction: column;
+    }
+}
+
+.footer-main {
+    padding-top: 0;
+    /* Since CTA overlaps */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-col h4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+    color: #94A3B8;
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-desc {
+    color: #94A3B8;
+    max-width: 300px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #94A3B8;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-top: rem;
+        /* adjust if needed */
+    }
+
+    .cta-box {
+        transform: translateY(-10%);
+        /* Reduce overlap on mobile */
+        margin-bottom: 2rem;
+    }
+
+    .footer-wrapper {
+        margin-top: 4rem;
+    }
+}
+
+/* Success and Error states */
+.success-message {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.input-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.error-text {
+    color: #fca5a5;
+    /* Light red */
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    margin-left: 0.25rem;
+}
+
+.footer-waitlist-input.input-error {
+    border-color: #fca5a5;
+    background-color: rgba(252, 165, 165, 0.1);
+}
+
+.waitlist-wrapper {
+    margin-top: 1rem;
+}
+
+.loading-spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-container {
+    padding: 1rem;
+}
+
+.error-text-center {
+    color: #fca5a5;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.back-button-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.back-button {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.back-button:hover {
+    color: white;
+    text-decoration: underline;
+}
