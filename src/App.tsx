@@ -1,23 +1,24 @@
-import './index.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
 
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import HowItWorks from './components/HowItWorks'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import TermsAndConditions from './components/TermsAndConditions';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
-      <Footer />
-    </div>
-  )
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

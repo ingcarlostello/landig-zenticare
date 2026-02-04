@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const LOOPS_API_URL = "https://app.loops.so/api/newsletter-form/cmkd49zug05oj0hz6tdf9agz2"
@@ -211,7 +212,10 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>© 2024 Zenticare Inc. All rights reserved.</p>
+                    <div className="footer-bottom-links">
+                        <p>© 2026 Zenticare Inc. All rights reserved.</p>
+                        <Link to="/terms-and-conditions" className="footer-link">Terms and Conditions</Link>
+                    </div>
                     <div className="socials">
                         <div className="social-icon"></div>
                         <div className="social-icon"></div>

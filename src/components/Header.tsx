@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
     return (
         <header className="header">
             <div className="container header-container">
-                <div className="logo">
+                <Link to="/" className="logo">
                     <img src="/Z-logo-TransparetICO.ico" alt="Zenticare" className="logo-img" />
                     <span className="logo-text">Zenticare</span>
-                </div>
+                </Link>
                 <nav className="nav">
                     <a href="#features" className="nav-link">Features</a>
                     <a href="#how-it-works" className="nav-link">How it Works</a>

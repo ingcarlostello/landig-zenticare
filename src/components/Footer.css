@@ -196,38 +196,23 @@
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
 
-.error-container {
-    padding: 1rem;
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-.error-text-center {
-    color: #fca5a5;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.back-button-container {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.back-button {
-    background: transparent;
-    color: rgba(255, 255, 255, 0.7);
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 0.95rem;
+.footer-link {
+    color: #94A3B8;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
-.back-button:hover {
+.footer-link:hover {
     color: white;
-    text-decoration: underline;
 }
